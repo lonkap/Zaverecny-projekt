@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="no">
+    <!--vložený HEAD-->
+{% include "partials/head.njk" %}
+<body>
+    <!--vložený HEADER-->
+{% include "partials/header.njk" %}
+        <!--konec společného obsahu pro všechny stránky NAD obsahem-->
+
+    {{ content | safe }}
+   
+       <!--začátek společného obsahu pro všechny stránky POD obsahem-->
+       <!--vložený FOOTER-->   
+    {% include "partials/footer.njk" %}
+</body>
+</html>

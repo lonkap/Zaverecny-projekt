@@ -1,33 +1,21 @@
-<!DOCTYPE html>
-<html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Einunndalen</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-	
-</head>
-<body>
-   <!--logo-->
-   <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-   <!--navigace-->
-   <ul>
-        <li><a href="overnatting&mat.html">overnatting&mat</a></li>
-        <li><a href="bildergalleri.html">bildergalleri</a></li>
-        <li><a href="info.html">info</a></li>
-        <li><a href="tips.html">tips</a></li>
-   </ul>
-   
-   <!--úvodni fotografie-->
-    <img src="img/inger2.jpg" alt="Einunndalen-bildet av Inger Pedersen Nesteby">
-    <h1>Einunndalen</h1>
-    <p>en guide for reisende</p>
+---
+layout: sablona/hlavni-sablona.njk
+title: Einunndalen
+---
+
+    <!--úvodni fotografie-->
+        <img src="/img/inger2.jpg" class="header_photo" alt="Einunndalen-bildet av Inger Pedersen Nesteby">
+        <h1>Einunndalen</h1>
+        <p class="header_text">en guide for reisende</p>
+    
+
+
     <a class="button" href="bildergalleri.html">bildergalleri</a>
     <p>Einunndalen strekker seg over en imponerende lengde på 55 kilometer, og det er Norges lengste seterdal. Du kan ta veien inn i dalen ved å svinge av enten ved Moskardet eller i Dalholen. Einunndalen byr på flotte muligheter for fjellturer og vandringer på stier som tar deg gjennom urørt naturskjønnhet. I tillegg kan du nyte fisking i fjellvann, bekker og elver som renner gjennom dalen.</p>
 
     <!--mapa oblasti-->
     <a href="https://www.google.com/maps/d/viewer?mid=1LMkc-6l8I1BNHIdsgNzoTSFCi1Zz8P4&ll=62.22446235497065%2C9.99179204677735&z=10">
-    <img src="img/kart_einunndalen.svg" alt="kartet til Einunndalen">
+    <img src="/img/kart_einunndalen.svg" alt="kartet til Einunndalen">
     </a>
 
     <!--sekce Aktivity-->
@@ -35,7 +23,7 @@
    <!--karty s aktivitami--> 
     <div class="karta">
         <a href="tips.html">
-            <img src="img/fottur.jpeg" alt="jente på tur">
+            <img src="/img/fottur.jpeg" alt="jente på tur">
         </a>    
             <p>Foto:Pixabay</p>
           
@@ -46,7 +34,7 @@
 
     <div class="karta">
         <a href="https://rondanevegen.no/folldal-sykkelmekka/">
-            <img src="img/sykling.jpg" alt="to syklister">
+            <img src="/img/sykling.jpg" alt="to syklister">
         </a>    
             <p>Foto:Pixabay</p>
             <h3>sykling</h3>
@@ -56,7 +44,7 @@
 
     <div class="karta">
         <a href="https://www.folldal-fjellstyre.no/fiske">
-            <img src="img/fisking.jpg" alt="fisk">
+            <img src="/img/fisking.jpg" alt="fisk">
         </a>   
             <p>Foto:Pixabay</p>
             <h3>fisking</h3>
@@ -71,7 +59,7 @@
         
     <div class="karta">
         <a href="https://www.bua.no/bua-folldal/utstyr/ski-og-skoyter">
-            <img src="img/ski.jpg" alt="man går på ski Foto: Inger Pedersen Nesteby">
+            <img src="/img/ski.jpg" alt="man går på ski Foto: Inger Pedersen Nesteby">
         </a>
             <p>Foto:Inger Pedersen Nesteby</p>
              <h3>ski</h3>
@@ -92,7 +80,7 @@
 
     <div class="karta">
         <a href="https://kvistli.no/">
-            <img src="img/hester.jpg" alt="hester">
+            <img src="/img/hester.jpg" alt="hester">
         </a>    
             <p>Foto:Pixabay</p>
             <h3>hest</h3>
@@ -100,12 +88,4 @@
             </a>
     </div>
 
- <!--footer-->   
- <footer>
-    <p>lonkap 2023</p>
-    <p>kontakt</p>
-    <a href="bildergalleri.html">bildergalleri</a>
- </footer>
-
-</body>
-</html>
+ 
