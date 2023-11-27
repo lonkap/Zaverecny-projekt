@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -6,24 +7,32 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 :root {
   --font-special:"Comfortaa", sans-serif;
   --font-default: "Lato", sans-serif;
-  --size-h1: 32px;
+  --size-h1: 38px;
   --size-h2: 25px;
   --size-h3-4-p: 20px;
   --size-subtitle: 12px;
   --color-light: white;
   --color-special: #B5D2E1;
   --color-footer: #434343;
-  --grey: #EEEBEB;
-  --grey-light: #F5F5F5;
+  --grey: #F5F5F5;
+  --spacer: 20px;
+  --spacer-2:30px;
+  --weight-light: 300;
+  --weight-regular:400;
+  --weight-bold: 600px;
 }
 
 p,
 h4 {
   font-family: var(--font-default);
-  font-weight: 300;
+  font-weight: var(--weight-light);
   font-size: var(--size-h3-4-p);
 }
 
@@ -31,6 +40,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-special);
+  font-weight: var(--weight-bold);
 }
 
 h1 {
@@ -47,6 +57,178 @@ p {
   font-size: var(--size-h3-4-p);
 }
 
-.header_text {
+.aktiviteter {
+  background-image: linear-gradient(var(--grey), white, var(--grey));
+  margin-top: -5px;
+}
+
+.aktiviteter_title {
+  padding: 60px 0 40px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.header_logo {
+  width: 100%;
+  max-width: 150px;
+}
+
+.menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu_item {
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px;
+  color: black;
+  border: 5px solid transparent;
+  border-radius: 15px;
+}
+.menu_item:hover, .menu_item:active, .menu_item:focus {
+  border: 5px solid var(--color-special);
+  border-radius: 15px;
+}
+
+.header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: var(--spacer-2);
+}
+
+.header_logo {
+  flex: 0 1 33%;
+}
+
+.menu {
+  flex: 0 1 auto;
+}
+
+.card {
+  flex: 0 0 250px;
+  height: 300px;
+  margin: var(--spacer) 10px;
+  background-color: white;
+  border-radius: 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_photo {
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.card_text {
+  padding: 0 var(--spacer);
+  text-align: center;
+}
+
+.kontejner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.prvni {
+  background-image: url(/images/fottur.jpeg);
+}
+
+.druhy {
+  background-image: url(/images/sykling.jpg);
+}
+
+.treti {
+  background-image: url(/images/fisking.jpg);
+}
+
+.ctvrty {
+  background-image: url(/images/ski.jpg);
+}
+
+.paty {
+  background-image: url(/images/hundekjøring.jpg);
+}
+
+.sesty {
+  background-image: url(/images/hester.jpg);
+}
+
+.foto {
+  font-size: 10px;
+}
+
+.box {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url(/images/inger2.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: saturate(200%);
+  margin-bottom: 50px;
+}
+
+.photo_title {
+  position: absolute;
+  top: var(--spacer);
+  left: var(--spacer);
+}
+
+.photo_subtitle {
+  position: absolute;
+  top: 35%;
+  left: var(--spacer);
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.photo_autor {
+  position: absolute;
+  bottom: var(--spacer);
+  left: var(--spacer);
+  color: var(--grey);
+  font-size: 10px;
+}
+
+p {
+  padding: 0 var(--spacer);
+}
+
+.photo_subtitle {
   font-size: var(--size-h2);
+  font-family: var(--font-special);
+}
+
+.button {
+  padding: var(--spacer) 30px;
+  margin-bottom: var(--spacer);
+  border: 5px solid var(--color-special);
+  border-radius: 15px;
+  background-color: white;
+}
+.button_text {
+  font-size: var(--size-h2);
+  font-family: var(--font-special);
+}
+.button a {
+  text-decoration: none;
+}
+
+.photo-button {
+  text-align: center;
+}
+
+.home_map {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

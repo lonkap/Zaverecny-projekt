@@ -16,105 +16,139 @@
     <!--vložený HEADER-->
 <header class="header">
     <!--logo-->
-       <a href="index.html"><img src="/img/logo.svg" class="header_logo" alt="logo"></a>
+       <a href="/"><img src="/images/logo.svg" class="header_logo" alt="logo"></a>
     <!--navigace-->
        <div class="header_menu">
-    <ul>
-        <li><a href="/overnatting&mat/">overnatting&mat</a></li>
-        <li><a href="/bildergalleri/">bildergalleri</a></li>
-        <li><a href="/info/">info</a></li>
-        <li><a href="/tips/">tips</a></li>
+    <ul class="menu">
+        <li><a href="/overnatting&mat/" class="menu_item">overnatting&mat</a></li>
+        <li><a href="/bildergalleri/" class="menu_item">bildergalleri</a></li>
+        <li><a href="/info/" class="menu_item">info</a></li>
+        <li><a href="/tips/" class="menu_item">tips</a></li>
     </ul>
 </div>
    </header>
         <!--konec společného obsahu pro všechny stránky NAD obsahem-->
 
+        <!--ÚVODNÍ FOTOGRAFIE-->
+      <section class="box">
+        <div class="photo">
+            <div>
+                <h1 class="photo_title">Einunndalen</h1>
+                <span class="photo_subtitle">en guide for reisende</span>
+                <span class="photo_autor">Foto: Inger Pedersen Nesteby</span>
+            </div>
+        </div>
+      </section>
     
-    <!--úvodni fotografie-->
-        <img src="/img/inger2.jpg" class="header_photo" alt="Einunndalen-bildet av Inger Pedersen Nesteby">
-        <h1>Einunndalen</h1>
-        <p class="header_text">en guide for reisende</p>
-    
+     <!--TLAČÍTKO FOTOGALERIE-->
+    <section class="photo-button">
+        <button class="button"><a href="/bildergalleri/" class="button_text">bildergalleri</a></button>
+    </section>
 
+    <!--TEXT -->
+    <section class="home-text">
+        <p>Einunndalen strekker seg over en imponerende lengde på 55 kilometer, og det er Norges lengste seterdal.</p>
+        <p>Du kan ta veien inn i dalen ved å svinge av enten ved Moskardet eller i Dalholen.</p>
+        <p>Einunndalen byr på flotte muligheter for fjellturer og vandringer på stier som tar deg gjennom urørt naturskjønnhet. I tillegg kan du nyte fisking i fjellvann, bekker og elver som renner gjennom dalen.</p>
+    </section>
 
-    <a class="button" href="bildergalleri.html">bildergalleri</a>
-    <p>Einunndalen strekker seg over en imponerende lengde på 55 kilometer, og det er Norges lengste seterdal. Du kan ta veien inn i dalen ved å svinge av enten ved Moskardet eller i Dalholen. Einunndalen byr på flotte muligheter for fjellturer og vandringer på stier som tar deg gjennom urørt naturskjønnhet. I tillegg kan du nyte fisking i fjellvann, bekker og elver som renner gjennom dalen.</p>
-
-    <!--mapa oblasti-->
-    <a href="https://www.google.com/maps/d/viewer?mid=1LMkc-6l8I1BNHIdsgNzoTSFCi1Zz8P4&ll=62.22446235497065%2C9.99179204677735&z=10">
-    <img src="/img/kart_einunndalen.svg" alt="kartet til Einunndalen">
-    </a>
-
-    <!--sekce Aktivity-->
-    <h2>Aktiviteter</h2>
-   <!--karty s aktivitami--> 
-    <div class="karta">
-        <a href="tips.html">
-            <img src="/img/fottur.jpeg" alt="jente på tur">
-        </a>    
-            <p>Foto:Pixabay</p>
-          
-            <h3>futturer</h3>
-            <a href="tips.html" class="button">tips
-            </a>
-    </div>
-
-    <div class="karta">
-        <a href="https://rondanevegen.no/folldal-sykkelmekka/">
-            <img src="/img/sykling.jpg" alt="to syklister">
-        </a>    
-            <p>Foto:Pixabay</p>
-            <h3>sykling</h3>
-            <a href="https://rondanevegen.no/folldal-sykkelmekka/" class="button"> folldal sykkelmekka/utleie 
-            </a>
-    </div>
-
-    <div class="karta">
-        <a href="https://www.folldal-fjellstyre.no/fiske">
-            <img src="/img/fisking.jpg" alt="fisk">
-        </a>   
-            <p>Foto:Pixabay</p>
-            <h3>fisking</h3>
-        
-        <p>
-            <a href="https://www.folldal-fjellstyre.no/fiske" class="button">
-               hvor</a>
-            <a href="https://www.inatur.no/fiske/5a1ffe8be4b0008ca96ff37d/sportsfiske-i-folldal-statsallmenning" class="button">
-               fiskekort</a>
-        </p>
-    </div>
-        
-    <div class="karta">
-        <a href="https://www.bua.no/bua-folldal/utstyr/ski-og-skoyter">
-            <img src="/img/ski.jpg" alt="man går på ski Foto: Inger Pedersen Nesteby">
+    <!--MAPA OBLASTI-->
+    <section class="home-map">
+        <a href="https://www.google.com/maps/d/viewer?mid=1LMkc-6l8I1BNHIdsgNzoTSFCi1Zz8P4&ll=62.22446235497065%2C9.99179204677735&z=10">
+        <img src="/images/kart_einunndalen.svg" class="home_map" alt="kartet til Einunndalen">
         </a>
-            <p>Foto:Inger Pedersen Nesteby</p>
-             <h3>ski</h3>
-            <a href="https://www.bua.no/bua-folldal/utstyr/ski-og-skoyter" class="button">utleie
-            </a>
-    </div>
+    </section>
 
-    <div class="karta">
-        <a href="https://www.facebook.com/folldatrekkhundklub/">
-            <img src="img/hundekjøring.jpg" alt="hundekjøring">
-        </a>
-            <p>Foto:Pixabay</p>
-       
-            <h3>hundekjøring</h3>
-            <a href="https://www.facebook.com/folldatrekkhundklub/" class="button"> Folldal trekkhundklub 
-            </a>
-    </div>
+    <!--AKTIVITY-->
+    <section class="aktiviteter">
+        <h2 class="aktiviteter_title">Aktiviteter</h2>
+      
+        <!--karta1-->
+        <div class="kontejner">
+                <div class="card">
+                    <a href="/tips/">
+                        <div class="card_photo prvni">
+                        </div>
+                    </a>
+                    <div class="card_text">
+                        <span class="foto">Foto: Pixabay</span>
+                        <h3>futturer</h3>
+                        <span><a href="/tips/">tips</a></span>
+                    </div>
+                </div>
+        
+                <!--karta2-->
+                <div class="card">
+                    <a href="https://rondanevegen.no/folldal-sykkelmekka/">
+                        <div class="card_photo druhy">
+                        </div>
+                    </a>
+                    <div class="card_text">
+                        <span class="foto">Foto: Pixabay</span>
+                        <h3>sykling</h3>
+                        <span><a href="https://rondanevegen.no/folldal-sykkelmekka/">sykk.mekka og utleie 
+                        </a>
+                </span>
+                    </div>
+                </div>
 
-    <div class="karta">
-        <a href="https://kvistli.no/">
-            <img src="/img/hester.jpg" alt="hester">
-        </a>    
-            <p>Foto:Pixabay</p>
-            <h3>hest</h3>
-            <a href="https://kvistli.no/" class="button">Kvistli islandshester
-            </a>
-    </div>
+                <!--karta3-->
+                <div class="card">
+                    <a href="https://www.folldal-fjellstyre.no/fiske">
+                        <div class="card_photo treti">
+                        </div>
+                    </a>
+                    <div class="card_text">
+                        <span class="foto">Foto: Pixabay</span>
+                        <h3>fisking</h3>
+                        <span><a href="https://www.folldal-fjellstyre.no/fiske">
+                            hvor</a><br>
+                            <a href="https://www.inatur.no/fiske/5a1ffe8be4b0008ca96ff37d/sportsfiske-i-folldal-statsallmenning">
+                            fiskekort</a></span>
+                    </div>
+                </div>
+                <!--karta4-->
+                <div class="card">
+                    <a href="https://www.bua.no/bua-folldal/utstyr/ski-og-skoyter">
+                        <div class="card_photo ctvrty">
+                        </div>
+                    </a>
+                    <div class="card_text">
+                        <span class="foto">Foto: Inger Pedersen Nesteby</span>
+                        <h3>ski</h3>
+                        <span><a href="https://www.bua.no/bua-folldal/utstyr/ski-og-skoyter">utleie
+                        </a></span>
+                    </div>
+                </div>
 
+                <!--karta5-->
+                <div class="card">
+                    <a href="https://www.folldaltrekkhundklubb.no/next/p/73711/hjem">
+                        <div class="card_photo paty">
+                        </div>
+                    </a>
+                    <div class="card_text">
+                        <span class="foto">Foto: Pixabay</span>
+                        <h3>hundekjøring</h3>
+                        <span><a href="https://www.folldaltrekkhundklubb.no/next/p/73711/hjem">Folldal trekkhundklub</a></span>
+                    </div>
+                </div>
+
+                <!--karta6-->
+                <div class="card">
+                    <a href="https://kvistli.no/">
+                        <div class="card_photo sesty">
+                        </div>
+                    </a>
+                    <div class="card_text">
+                        <span class="foto">Foto: Pixabay</span>
+                        <h3>hester</h3>
+                        <span><a href="https://kvistli.no/">Kvistli islandshester</a></span>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
  
 
    

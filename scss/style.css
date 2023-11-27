@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --font-special:"Comfortaa", sans-serif;
+  --font-default: "Lato", sans-serif;
+  --size-h1: 32px;
+  --size-h2: 25px;
+  --size-h3-4-p: 20px;
+  --size-subtitle: 12px;
+  --color-light: white;
+  --color-special: #B5D2E1;
+  --color-footer: #434343;
+  --grey: #EEEBEB;
+  --grey-light: #F5F5F5;
+}
+
+p,
+h4 {
+  font-family: var(--font-default);
+  font-weight: 300;
+  font-size: var(--size-h3-4-p);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-special);
+}
+
+h1 {
+  font-size: var(--size-h1);
+}
+
+h2 {
+  font-size: var(--size-h2);
+}
+
+h3,
+h4,
+p {
+  font-size: var(--size-h3-4-p);
+}
+
+.header_text {
+  font-size: var(--size-h2);
+}/*# sourceMappingURL=style.css.map */

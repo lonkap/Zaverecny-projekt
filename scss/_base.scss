@@ -1,0 +1,66 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+body{
+  margin: 0;
+}
+
+//DEFINOVÁNÍ VELIKOSTI A DRUHU PÍSMA **************************
+:root {
+    --font-special:'Comfortaa', sans-serif;
+    --font-default: 'Lato', sans-serif;
+    --size-h1: 38px;
+    --size-h2: 25px;
+    --size-h3-4-p: 20px;
+    --size-subtitle: 12px;
+    --color-light: white;
+    --color-special: #B5D2E1;
+    --color-footer: #434343;
+    --grey: #F5F5F5;
+    --spacer: 20px;
+    --spacer-2 :30px;
+    --weight-light: 300;
+    --weight-regular:400;
+    --weight-bold: 600px;
+    }
+
+    //VELIKOST PÍSMA H1-H4 A p  **************************************
+    p,
+    h4{
+        font-family: var(--font-default);
+        font-weight: var(--weight-light);
+        font-size: var(--size-h3-4-p);
+    }
+    
+    h1,
+    h2,
+    h3{
+        font-family: var(--font-special);
+        font-weight: var(--weight-bold);
+        
+    }
+    h1{
+      font-size: var(--size-h1);
+    }
+    h2{
+      font-size: var(--size-h2);
+    }
+    h3,
+    h4,
+    p{
+      font-size: var(--size-h3-4-p);
+    }
+    //ODKAZY - BARVY, DEKORACE *****************************************
+    
+       
+//ŠEDÉ POZADÍ U SEKCE AKTIVITETER NA HOMEPAGE *********************************
+.aktiviteter{
+  background-image: linear-gradient( var(--grey),white, var(--grey));
+  margin-top:-5px;  //ELIMINUJE BÍLÝ PRUH MEZI MAPOU A SEKCÍ AKTIVITY NA HOMEPAGE
+}
+ //ODSAZANÍ NADPISU "AKTIVITETER" NA HOMEPAGE
+.aktiviteter_title{
+  padding:60px 0 40px 0;
+  margin: 0;
+  text-align: center;
+  
+}

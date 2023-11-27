@@ -1,0 +1,69 @@
+//FLEX - DÁVÁ VEDLE SEBE LOGO A MENU *****************************á
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--spacer-2);
+}
+.header_logo{
+    flex: 0 1 33%;
+}
+.menu{
+    flex: 0 1 auto;
+}
+
+//FLEX  - DÁVÁ KARTY S AKTIVITAMI NA HOMEPAGE VEDLE SEBE PO DVOU - PRO SMALL A MEDIUM
+//STYL CELÉ KARTY
+.card{
+    flex: 0 0 250px;  
+    height: 300px;
+    margin: var(--spacer) 10px;
+    background-color: white;
+    border-radius: 15px 15px;
+    box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.2);
+}
+
+//STYL HORNÍ POLOVINY S FOTKOU
+.card_photo{
+    
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+//STYL DOLNÍ POLOVINY S TEXTEM
+.card_text{
+padding: 0 var(--spacer);
+text-align: center;
+}
+//KONTEJNER PRO DISPLAY FLEX PRO ŘAZANÍ KARET ZA SEBOU NA HOMEPAGE
+.kontejner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+//OSM FOTOGRAFIÍ DO KARET S AKTIVITAMI NA HOMEPAGE
+.prvni{
+    background-image: url(/images/fottur.jpeg);
+}
+.druhy{
+    background-image: url(/images/sykling.jpg);
+}
+.treti{
+    background-image: url(/images/fisking.jpg);
+}
+.ctvrty{
+    background-image: url(/images/ski.jpg);
+}
+.paty{
+    background-image: url(/images/hundekjøring.jpg);
+}
+.sesty{
+    background-image: url(/images/hester.jpg);
+}
+
+//MALÉ PÍSMO PRO AUTORY FOTEK
+.foto{
+    font-size: 10px;
+}
