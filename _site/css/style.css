@@ -18,7 +18,6 @@ body {
   --size-h2: 25px;
   --size-h3-4-p: 20px;
   --size-subtitle: 12px;
-  --color-light: white;
   --color-special: #B5D2E1;
   --color-footer: #434343;
   --grey: #F5F5F5;
@@ -62,7 +61,7 @@ p {
   margin-top: -5px;
 }
 
-.aktiviteter_title {
+.section_title {
   padding: 60px 0 40px 0;
   margin: 0;
   text-align: center;
@@ -113,7 +112,7 @@ p {
 }
 
 .card {
-  flex: 0 0 250px;
+  flex: 0 0 calc((100% - 80px) / 2);
   height: 300px;
   margin: var(--spacer) 10px;
   background-color: white;
@@ -138,6 +137,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 50px;
 }
 
 .prvni {
@@ -166,6 +166,30 @@ p {
 
 .foto {
   font-size: 10px;
+}
+
+.container_cards {
+  display: grid;
+  gap: var(--spacer);
+  grid-template-columns: repeat(2, 1fr);
+  padding: var(--spacer);
+}
+
+.container_card {
+  grid-column: span 1;
+  margin: var(--spacer) 10px;
+  background-color: white;
+  border-radius: 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 300px;
+}
+
+.container_cards img {
+  width: 100%;
+  height: 50%;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .box {
@@ -231,4 +255,43 @@ p {
 
 .home_map {
   width: 100%;
+}
+
+.bildergalleri ~ img {
+  width: 100%;
+}
+
+.bildergalleri ~ img:nth-of-type(n+10) {
+  margin-top: -15px;
+}
+
+.bildergalleri ~ img:nth-of-type(n+24) {
+  margin-top: 1px;
+}
+
+.bildergalleri_autor {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 25px;
+  left: 40px;
+}
+
+.footer {
+  height: 100px;
+  background-color: var(--color-footer);
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer_text {
+  padding: var(--spacer);
+  margin: 0;
+  font-size: 15px;
+  color: darkgrey;
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-//FOTOGRAFIE NA HOMEPAGE ***************************************
+//FOTOGRAFIE NA HOMEPAGE *******************************
  .box{
     width: 100%;
     height: 300px;
@@ -10,7 +10,7 @@
     margin-bottom: 50px;
  }
 
-//UMÍSTĚNÍ TEXTU  A PODTEXTU NA ÚVODNÍ FOTOGRAFII ******************************
+//UMÍSTĚNÍ TEXTU  A PODTEXTU NA ÚVODNÍ FOTOGRAFII NA HOMEPAGE
 .photo_title{
     position: absolute ;
     top: var(--spacer);
@@ -21,10 +21,10 @@
     top:35%;
     left: var(--spacer);
     color:white;
-    //STÍN KOLEM BÍLÉHO TEXTU
+    //STÍN KOLEM BÍLÉHO TEXTU NA ÚVODNÍ FOTOGRAFII NA HOMEPAGE
     text-shadow: 0 0 2px black;
 }
-//  VLOŽENÍ JMÉNA AUTORA DO FOTOGRAFIE ******************************************
+//  VLOŽENÍ JMÉNA AUTORA DO FOTOGRAFIE NA HOMEPAGE*********************
 .photo_autor{
     position: absolute ;
     bottom:var(--spacer);
@@ -33,16 +33,16 @@
     font-size: 10px;
 }
 
-//TEXT NA HOMEPAGE ************************************************************
+//TEXT NA HOMEPAGE *****************************************
 p{
     padding:  0 var(--spacer);
 }
-//PODPOPISEK U FOTKY NA HOMEPAGE *************************************
+//PODPOPISEK U FOTKY NA HOMEPAGE **************************
 .photo_subtitle{
     font-size: var(--size-h2);
     font-family: var(--font-special);
   }
-  //TLAČÍTKO PRO FOTOGALERII NA HOMEPAGE**********************************************
+  //TLAČÍTKO PRO FOTOGALERII NA HOMEPAGE*******************
   .button{
     padding:var(--spacer) 30px;
     margin-bottom: var(--spacer);
@@ -57,12 +57,40 @@ p{
       text-decoration: none;
     }
   }
-  //UMÍSTĚNÍ TLAČÍTKA FOTOGALERIE NA HOMEPAGE DOPROSTŘED
+  //UMÍSTĚNÍ TLAČÍTKA FOTOGALERIE DOPROSTŘED NA HOMEPAGE****
     .photo-button{
       text-align: center;
     }
 
- //MAPA NA HOMEPAGE ***************************************************************
+ //MAPA NA HOMEPAGE *****************************************
  .home_map{
     width:100%;
  }
+//*******************************************************************************************************
+//*******************************************************************************************************
+ //NASTAVENÍ 100% ŠÍŘE VŠEM OBRÁZKŮM V "BILDERGALLERI" ******
+ .bildergalleri~img{
+  width: 100%;
+  
+ }
+ //VYTVOŘENÍ BÍLÉHO PROUŽKU MEZI FOTOGRAFIEMI, KT.MAJÍ VLOŽENÝ POPISEK S AUTOREM, V "BILDERGALLERI"
+ .bildergalleri~img:nth-of-type(n+10){
+  margin-top:-15px;
+ }
+ //VYTVOŘENÍ BÍLÉHO PROUŽKU U POSLEDNÍCH 6 FOTOGRAFIÍ V "BILDERGALLERI"
+ .bildergalleri~img:nth-of-type(n+24){
+  margin-top:1px;
+ }
+ //UMÍSTĚNÍ POPISU, KDO JE AUTOREM FOTOGRAFIE, NA FOTOGRAFIE V "BILDERGALLERI"
+  .bildergalleri_autor{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom:25px;
+    left: 40px;
+  }
+ 
+ 

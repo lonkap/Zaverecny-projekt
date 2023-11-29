@@ -3,25 +3,24 @@ html { box-sizing: border-box; }
 body{
   margin: 0;
 }
-
 //DEFINOVÁNÍ VELIKOSTI A DRUHU PÍSMA **************************
 :root {
-    --font-special:'Comfortaa', sans-serif;
-    --font-default: 'Lato', sans-serif;
-    --size-h1: 38px;
-    --size-h2: 25px;
-    --size-h3-4-p: 20px;
-    --size-subtitle: 12px;
-    --color-light: white;
-    --color-special: #B5D2E1;
-    --color-footer: #434343;
-    --grey: #F5F5F5;
-    --spacer: 20px;
-    --spacer-2 :30px;
-    --weight-light: 300;
-    --weight-regular:400;
-    --weight-bold: 600px;
-    }
+  --font-special:'Comfortaa', sans-serif;
+  --font-default: 'Lato', sans-serif;
+  --size-h1: 38px;
+  --size-h2: 25px;
+  --size-h3-4-p: 20px;
+  --size-subtitle: 12px;
+   --color-special: #B5D2E1;
+  --color-footer: #434343;
+  --grey: #F5F5F5;
+  --spacer: 20px;
+  --spacer-2 :30px;
+  --weight-light: 300;
+  --weight-regular:400;
+  --weight-bold: 600px;
+  }
+
 
     //VELIKOST PÍSMA H1-H4 A p  **************************************
     p,
@@ -57,8 +56,8 @@ body{
   background-image: linear-gradient( var(--grey),white, var(--grey));
   margin-top:-5px;  //ELIMINUJE BÍLÝ PRUH MEZI MAPOU A SEKCÍ AKTIVITY NA HOMEPAGE
 }
- //ODSAZANÍ NADPISU "AKTIVITETER" NA HOMEPAGE
-.aktiviteter_title{
+ //ODSAZANÍ VŠECH NADPISŮ SEKCÍ H2 (AKTIVITETER,
+.section_title{
   padding:60px 0 40px 0;
   margin: 0;
   text-align: center;

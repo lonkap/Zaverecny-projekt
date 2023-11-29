@@ -6,7 +6,7 @@
     padding: var(--spacer-2);
 }
 .header_logo{
-    flex: 0 1 33%;
+    flex: 0 1 33%; //LOGO ZABÍRÁ 33%
 }
 .menu{
     flex: 0 1 auto;
@@ -15,7 +15,7 @@
 //FLEX  - DÁVÁ KARTY S AKTIVITAMI NA HOMEPAGE VEDLE SEBE PO DVOU - PRO SMALL A MEDIUM
 //STYL CELÉ KARTY
 .card{
-    flex: 0 0 250px;  
+    flex: 0 0 calc((100% - 80px) / 2);  
     height: 300px;
     margin: var(--spacer) 10px;
     background-color: white;
@@ -42,6 +42,7 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 50px; // ODSOUVÁ SPODNÍ KARTY OD FOOTER
 }
 //OSM FOTOGRAFIÍ DO KARET S AKTIVITAMI NA HOMEPAGE
 .prvni{
@@ -63,7 +64,31 @@ text-align: center;
     background-image: url(/images/hester.jpg);
 }
 
-//MALÉ PÍSMO PRO AUTORY FOTEK
+//MALÉ PÍSMO PRO AUTORY FOTEK V KARTÁCH SEKCI "AKTIVITETER" NA HOMEPAGE
 .foto{
     font-size: 10px;
+}
+
+//GRID PRO KARTY V "OVERNATTING"*****************************************************************
+.container_cards{
+    display: grid;
+    gap: var(--spacer);
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--spacer);
+}
+//UMÍSTĚNÍ KAŽDÉ KARTY DO 1 SLOUPCE V "OVERNATTING"
+.container_card{
+    grid-column: span 1;
+    margin: var(--spacer) 10px;
+    background-color: white;
+    border-radius: 15px 15px;
+    box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.2);
+    height: 300px;
+}
+//VÝŠKA A ŠÍŘKA FOTKY V KARTĚ V "OVERNATTING"
+.container_cards img{
+    width: 100%;
+    height: 50%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
