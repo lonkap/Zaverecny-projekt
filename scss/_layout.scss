@@ -1,4 +1,4 @@
-//FLEX - DÁVÁ VEDLE SEBE LOGO A MENU *****************************á
+//FLEX - DÁVÁ VEDLE SEBE LOGO A MENU *
 .header{
     display: flex;
     justify-content: space-evenly;
@@ -21,6 +21,9 @@
     background-color: white;
     border-radius: 15px 15px;
     box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.2);
+    @media (max-width:599px){ //  ZVĚTŠUJE ROZESTUPY MEZI KARTAMI NA HOMEPAGE****** MEDIA SMALL ********
+        margin: 50px 30px;
+        }
 }
 
 //STYL HORNÍ POLOVINY S FOTKOU
@@ -31,6 +34,9 @@
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0 0;
+    @media (max-width:599px){ //ZVĚTŠUJE FOTKU Z 50 NA 55%************ MEDIA SMALL ************
+        height: 55%;
+    }
 }
 //STYL DOLNÍ POLOVINY S TEXTEM
 .card_text{
@@ -43,6 +49,9 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 50px; // ODSOUVÁ SPODNÍ KARTY OD FOOTER
+    @media (max-width:599px){ //DÁVÁ KARTY POD SEBE PO 1************** MEDIA SMALL **************
+        display: block;
+    }
 }
 //OSM FOTOGRAFIÍ DO KARET S AKTIVITAMI NA HOMEPAGE
 .prvni{
@@ -64,17 +73,28 @@ text-align: center;
     background-image: url(/images/hester.jpg);
 }
 
-//MALÉ PÍSMO PRO AUTORY FOTEK V KARTÁCH SEKCI "AKTIVITETER" NA HOMEPAGE
-.foto{
-    font-size: 10px;
+.fisk{//DÁVÁ VEDLE SEBE "HVOR" A "FISKEKORT" NA KARTĚ NA HOMEPAGE
+    display: flex;
+    justify-content: space-around;
 }
-
-//GRID PRO KARTY V "OVERNATTING"*****************************************************************
+//MALÉ PÍSMO PRO AUTORY FOTEK V KARTÁCH SEKCI "AKTIVITETER" NA HOMEPAGE, V "OVERNATTING"
+.foto-font{
+    font-size: 10px;
+  }
+  //POSOUVÁ "FOTO: PIXABAY" VÝŠ POD FOTKU V "OVERNATTING"
+  .pixa{
+    position: relative;
+    bottom: var(--spacer);
+  }
+//GRID PRO KARTY V "OVERNATTING"
 .container_cards{
     display: grid;
     gap: var(--spacer);
     grid-template-columns: repeat(2, 1fr);
     padding: var(--spacer);
+    @media (max-width:599px){ //KARTY JSOU POD SEBOU V "OVERNATTING"***** MEDIA SMALL ***********
+        display: block;
+    }
 }
 //UMÍSTĚNÍ KAŽDÉ KARTY DO 1 SLOUPCE V "OVERNATTING"
 .container_card{
@@ -84,11 +104,56 @@ text-align: center;
     border-radius: 15px 15px;
     box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.2);
     height: 300px;
+    text-align: center;
+    @media (max-width:599px){ //  ZVĚTŠUJE ROZESTUPY MEZI KARTAMI V "OVERNATTING"****** MEDIA SMALL ********
+        margin: 50px 10px;
+        }
+    }
+//STYLUJE FOTOGRAFIE NA KARTÁCH V "OVERNATTING"
+.foto{
+        width: 100%;
+        height: 50%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        @media (max-width:599px){// ZVĚTŠUJE FOTKU Z 50 NA 70%************** MEDIA SMALL **********
+            height:70%;
+        }
+    }
+//FLEXBOX DÁVÁ VEDLE SEBE FOTKU A TEXT V "OVERNATTING"
+.flexbox{
+    display: flex;
+    &.camp{
+        align-items: center;
+    }
+    @media (max-width:599px){ //RUŠÍ FLEXBOX V "OVERNATTING************** MEDIA SMALL****************
+        display: block;
+    }
 }
-//VÝŠKA A ŠÍŘKA FOTKY V KARTĚ V "OVERNATTING"
-.container_cards img{
-    width: 100%;
-    height: 50%;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
+
+.flexbox_text{
+    flex: 0 1 50%;
+    padding: 0 var(--spacer);
+    & p{
+        padding: 0;
+    }
+    @media (max-width:599px){ //DĚLÁ MEZERU POD TEXTEM V "OVERNATTING"************ MEDIA SMALL***************
+        padding-bottom: var(--spacer);
+    }
 }
+
+.flexbox_photo{
+    flex: 0 0 calc((100% - 80px) / 2);  
+    margin: var(--spacer) var(--spacer-2);
+    text-align: center;
+}
+//ZAOBLUJE FOTKU A DÁVÁ ŠÍŘKU 100% V "OVERNATTING"
+.flexbox_photo img{
+   width:100%;
+   border-radius: 15px;
+   margin-bottom: var(--spacer);
+   
+}
+.mer-info{
+    padding: var(--spacer);
+}
+

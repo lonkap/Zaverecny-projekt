@@ -3,6 +3,7 @@ html { box-sizing: border-box; }
 body{
   margin: 0;
 }
+
 //DEFINOVÁNÍ VELIKOSTI A DRUHU PÍSMA **************************
 :root {
   --font-special:'Comfortaa', sans-serif;
@@ -19,12 +20,16 @@ body{
   --weight-light: 300;
   --weight-regular:400;
   --weight-bold: 600px;
+  --small: 600px;
+  --medium: 800px;
+  --large: 1200px;
   }
-
+$small:600px;
 
     //VELIKOST PÍSMA H1-H4 A p  **************************************
     p,
-    h4{
+    h4,
+    li{
         font-family: var(--font-default);
         font-weight: var(--weight-light);
         font-size: var(--size-h3-4-p);
@@ -48,18 +53,33 @@ body{
     p{
       font-size: var(--size-h3-4-p);
     }
-    //ODKAZY - BARVY, DEKORACE *****************************************
+    //ODKAZY - BARVY, DEKORACE 
     
        
-//ŠEDÉ POZADÍ U SEKCE AKTIVITETER NA HOMEPAGE *********************************
+//ŠEDÉ POZADÍ U SEKCE AKTIVITETER NA HOMEPAGE 
 .aktiviteter{
   background-image: linear-gradient( var(--grey),white, var(--grey));
   margin-top:-5px;  //ELIMINUJE BÍLÝ PRUH MEZI MAPOU A SEKCÍ AKTIVITY NA HOMEPAGE
 }
- //ODSAZANÍ VŠECH NADPISŮ SEKCÍ H2 (AKTIVITETER,
+.åpne_buer{
+  background-image: linear-gradient( var(--grey),white, var(--grey));
+}
+ //ODSAZANÍ VŠECH HLAVNÍCH NADPISŮ JEDNOTLIVÝCH STRÁNEK
 .section_title{
   padding:60px 0 40px 0;
   margin: 0;
   text-align: center;
-  
+}
+//ZAROVNÁNÍ VŠECH PODNADPISŮ H2 A H3 VLEVO
+.section_subtitle{
+  text-align: left;
+  margin-left: var(--spacer-2);
+  margin:0;
+  padding: 40px var(--spacer-2) var(--spacer-2) var(--spacer-2);
+}
+::marker{// ZBARVUJE ODRÁŽKY U SEZNAMU V "OVERNATTING"
+  color: var(--color-special);
+}
+ul{//DĚLÁ Z ODRÁŽEK ČTVERCE V "OVERNATTING"
+  list-style-type: square;
 }

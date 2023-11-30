@@ -3,81 +3,90 @@ layout: sablona/hlavni-sablona.njk
 title: Overnatting & Mat
 ---
 
-     <h2>Overnatting & Mat</h2>
+<h2 class="section_title">Overnatting & Mat</h2>
 
      <!--kempy-->
-     <h3>Camping</h3>
-<img src="/images/mobile_home_pixa.jpg" alt="bildet av bobil">
-<ul>
-     <li>Gammelsetervangen</li>
-     <li>Marsjøen</li>
-     <li>Sandtaket</li>
-     <li>Naustvika</li>
- </ul>
-     <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv#camping">mer informasjon og kart</a>
-
+     <h3 class="section_subtitle">Camping</h3>
+     <div class="flexbox camp">
+        <div class="flexbox_photo">
+                <img src="/images/mobile_home_pixa.jpg" alt="bildet av bobil">
+                <span class="foto-font pixa">Foto: Pixabay</span>
+            </div>
+            <div class="flexbox_text">
+                    <ul>
+                        <li>Gammelsetervangen</li>
+                        <li>Marsjøen</li>
+                        <li>Sandtaket</li>
+                        <li>Naustvika</li>
+                    </ul>
+                    <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv#camping" class="mer-info">mer informasjon og kart</a>
+             </div>
+    </div>
 <!--buer a hytty-->
-<h3>Åpne buer - Folldal fjellstyre</h3>
-<div class="container_cards">
-    <!--karty s aktivitami--> 
-    <div class="container_card"><!--Sandtjønnbua-->
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
-            <img src="/images/Sandtjønnbua.JPG"  alt="Sandtjønnbua">
-        </a>    
-            <p>Foto:Folldal fjellstyre</p>
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
-            <p>Sandtjønnbua</p>
-        </a>
-    </div>
-
-    <div class="container_card"><!--Tvergjelbua-->
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
-            <img src="/images/Tvergjelbua.jpg"  alt="Tvergjelbua">
-        </a>    
-            <p>Foto:Folldal fjellstyre</p>
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
-            <p>Tvergjelbua</p>
-        </a>
-    </div>
-
-    <div class="container_card"><!--Buabekkbua-->
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
-            <img src="/images/Buabekkbua.JPG"  alt="Buabekkbua">
-        </a>    
-            <p>Foto:Folldal fjellstyre</p>
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
-            <p>Buabekkbua</p>
-        </a>
-    </div>
-
-    <div class="container_card"><!--Kløftebekkbua-->
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
-            <img src="/images/Kløftebekkbua.jpg"  alt="Kløftebekkbua">
-        </a>    
-            <p>Foto:Folldal fjellstyre</p>
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
-            <p>Kløftebekkbua</p>
-        </a>
-    </div>
-
-    <div class="container_card"><!--Kongsbekkbua-->
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
-            <img src="/images/Kongsbekkbua.jpg"  alt="Kløftebekkbua">
-        </a>    
-            <p>Foto:Folldal fjellstyre</p>
-        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
-            <p>Kongsbekkbua</p>
-        </a>
-    </div>
+<section class="åpne_buer"><!--ZAČÁTEK ŠEDÉHO PRUHU-->
+    <h3 class="section_subtitle">Åpne buer - Folldal fjellstyre</h3>
     
-    <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">mer informasjon og kart</a>
+    <div class="container_cards">
+        <div class="container_card"><!--Sandtjønnbua-->
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
+                <img src="/images/Sandtjønnbua.JPG" class="foto" alt="Sandtjønnbua">
+            </a>    
+            <span class="foto-font">Foto:Folldal fjellstyre</span>
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
+                <p>Sandtjønnbua</p>
+            </a>
+        </div>
+    
+        <div class="container_card"><!--Tvergjelbua-->
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
+                <img src="/images/Tvergjelbua.jpg" class="foto"Tvergjelbua">
+            </a>    
+                <span class="foto-font">Foto: Folldal fjellstyre</span>
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
+                <p>Tvergjelbua</p>
+            </a>
+        </div>
 
-    <h3>FSBIL - Folldal småbedrifter bedriftsidrettslag</h3>
+        <div class="container_card"><!--Buabekkbua-->
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
+                <img src="/images/Buabekkbua.JPG"  class="foto"alt="Buabekkbua">
+            </a>    
+                <span class="foto-font">Foto: Folldal fjellstyre</span>
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
+                <p>Buabekkbua</p>
+            </a>
+        </div>
+
+        <div class="container_card"><!--Kløftebekkbua-->
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
+                <img src="/images/Kløftebekkbua.jpg" class="foto" alt="Kløftebekkbua">
+            </a>    
+                <span class="foto-font">Foto: Folldal fjellstyre</span>
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
+                <p>Kløftebekkbua</p>
+            </a>
+        </div>
+
+        <div class="container_card"><!--Kongsbekkbua-->
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">
+                <img src="/images/Kongsbekkbua.jpg" class="foto" alt="Kløftebekkbua">
+            </a>    
+                <span class="foto-font">Foto: Folldal fjellstyre</span>
+            <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv">   
+                <p>Kongsbekkbua</p>
+            </a>
+        </div>
+        
+        <a href="https://www.folldal-fjellstyre.no/hytter-friluftsliv" class="mer-info">mer informasjon og kart</a>
+    </div>
+ 
+  <h3 class="section_subtitle">FSBIL - Folldal småbedrifter bedriftsidrettslag</h3>
+  <div class="container_cards">
     <div class="container_card"><!--Marsjohytta-->
         <a href="hhttps://www.facebook.com/Folldal.sbil">
-            <img src="/images/Marsjohytta.jpg"  alt="Marsjohytta">
+            <img src="/images/Marsjohytta.jpg" class="foto" alt="Marsjohytta">
         </a>    
-            <p>Foto:Folldal fjellstyre</p>
+            <span class="foto-font">Foto: Folldal fjellstyre</span>
             <a href="hhttps://www.facebook.com/Folldal.sbil"> 
             <p>Marsjohytta</p>
         </a>
@@ -85,20 +94,27 @@ title: Overnatting & Mat
 
     <div class="container_card"><!--Elgsjøbua-->
         <a href="https://www.facebook.com/Folldal.sbil">
-            <img src="/images/Elgsjøbua.jpg"  alt="Elgsjøbua">
+            <img src="/images/Elgsjøbua.jpg" class="foto" alt="Elgsjøbua">
         </a>    
-            <p>Foto:FSBIL</p>
+            <span class="foto-font">Foto: FSBIL</span>
             <a href="hhttps://www.facebook.com/Folldal.sbil">  
             <p>Elgsjøbua</p>
         </a>
     </div>
+ </div>
+</section><!--KONEC ŠEDÉHO PRUHU-->
+
+ <h3 class="section_subtitle">Mat</h3>
+ 
+<div class="flexbox">
+     <div class="flexbox_photo">
+        <a href="https://www.opplevalvdal.no/mat/romsdalssetra">
+        <img src="/images/ku_pixa.jpg" alt="bildet av ei ku"></a>
+        <span class="foto-font pixa">Foto: Pixabay</span>
+    </div>
+    <div class="flexbox_text">
+        <h3>Romsdalssetra</h3>
+        <p><a href="https://www.opplevalvdal.no/mat/romsdalssetra">Romsdalssetra</a> har en sjarmerende beliggenhet ved elvebredden, og tilbyr vakre alternativer for sykkelturer, fiske, bading, camping og fotturer i fjellet.</p>
+        <p>Flere av setrene i området er fortsatt i aktiv drift, inkludert den velkjente Kjøllhaugsetra. Om sommeren kan du besøke budeia, Gun Kjølhaug, som serverer autentisk setermat med røtter i tradisjonen.</p>
+    </div>
 </div>
-
-
-
- <h2>Mat</h2>
- <h3>Romsdalssetra</h3>
- <img src="/images/ku_pixa.jpg" alt="bildet av ei ku">
- <p>Romsdalssetra har en sjarmerende beliggenhet ved elvebredden, og tilbyr vakre alternativer for sykkelturer, fiske, bading, camping og fotturer i fjellet.</p>
- <p>Flere av setrene i området er fortsatt i aktiv drift, inkludert den velkjente Kjøllhaugsetra. Om sommeren kan du besøke budeia, Gun Kjølhaug, som serverer autentisk setermat med røtter i tradisjonen.</p>
-

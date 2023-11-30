@@ -26,10 +26,14 @@ body {
   --weight-light: 300;
   --weight-regular:400;
   --weight-bold: 600px;
+  --small: 600px;
+  --medium: 800px;
+  --large: 1200px;
 }
 
 p,
-h4 {
+h4,
+li {
   font-family: var(--font-default);
   font-weight: var(--weight-light);
   font-size: var(--size-h3-4-p);
@@ -61,10 +65,29 @@ p {
   margin-top: -5px;
 }
 
+.åpne_buer {
+  background-image: linear-gradient(var(--grey), white, var(--grey));
+}
+
 .section_title {
   padding: 60px 0 40px 0;
   margin: 0;
   text-align: center;
+}
+
+.section_subtitle {
+  text-align: left;
+  margin-left: var(--spacer-2);
+  margin: 0;
+  padding: 40px var(--spacer-2) var(--spacer-2) var(--spacer-2);
+}
+
+::marker {
+  color: var(--color-special);
+}
+
+ul {
+  list-style-type: square;
 }
 
 .header_logo {
@@ -119,6 +142,11 @@ p {
   border-radius: 15px 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 599px) {
+  .card {
+    margin: 50px 30px;
+  }
+}
 
 .card_photo {
   width: 100%;
@@ -126,6 +154,11 @@ p {
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
+}
+@media (max-width: 599px) {
+  .card_photo {
+    height: 55%;
+  }
 }
 
 .card_text {
@@ -138,6 +171,11 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 50px;
+}
+@media (max-width: 599px) {
+  .kontejner {
+    display: block;
+  }
 }
 
 .prvni {
@@ -164,8 +202,18 @@ p {
   background-image: url(/images/hester.jpg);
 }
 
-.foto {
+.fisk {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foto-font {
   font-size: 10px;
+}
+
+.pixa {
+  position: relative;
+  bottom: var(--spacer);
 }
 
 .container_cards {
@@ -173,6 +221,11 @@ p {
   gap: var(--spacer);
   grid-template-columns: repeat(2, 1fr);
   padding: var(--spacer);
+}
+@media (max-width: 599px) {
+  .container_cards {
+    display: block;
+  }
 }
 
 .container_card {
@@ -182,14 +235,66 @@ p {
   border-radius: 15px 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 300px;
+  text-align: center;
+}
+@media (max-width: 599px) {
+  .container_card {
+    margin: 50px 10px;
+  }
 }
 
-.container_cards img {
+.foto {
   width: 100%;
   height: 50%;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 599px) {
+  .foto {
+    height: 70%;
+  }
+}
+
+.flexbox {
+  display: flex;
+}
+.flexbox.camp {
+  align-items: center;
+}
+@media (max-width: 599px) {
+  .flexbox {
+    display: block;
+  }
+}
+
+.flexbox_text {
+  flex: 0 1 50%;
+  padding: 0 var(--spacer);
+}
+.flexbox_text p {
+  padding: 0;
+}
+@media (max-width: 599px) {
+  .flexbox_text {
+    padding-bottom: var(--spacer);
+  }
+}
+
+.flexbox_photo {
+  flex: 0 0 calc((100% - 80px) / 2);
+  margin: var(--spacer) var(--spacer-2);
+  text-align: center;
+}
+
+.flexbox_photo img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: var(--spacer);
+}
+
+.mer-info {
+  padding: var(--spacer);
 }
 
 .box {
@@ -199,7 +304,7 @@ p {
   background-image: url(/images/inger2.jpg);
   background-size: cover;
   background-position: center;
-  filter: saturate(200%);
+  filter: saturate(150%);
   margin-bottom: 50px;
 }
 
