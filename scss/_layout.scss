@@ -123,7 +123,7 @@ text-align: center;
 .flexbox{
     display: flex;
     &.camp{
-        align-items: center;
+        align-items: start;
     }
     @media (max-width:599px){ //RUŠÍ FLEXBOX V "OVERNATTING************** MEDIA SMALL****************
         display: block;
@@ -139,13 +139,25 @@ text-align: center;
     @media (max-width:599px){ //DĚLÁ MEZERU POD TEXTEM V "OVERNATTING"************ MEDIA SMALL***************
         padding-bottom: var(--spacer);
     }
+    & h4{ //NADPIS H4 JE TUČNĚ V "TIPS"
+        font-weight: 400;
+    }
+    @media (max-width:599px){ //DÁVÁ VEDLE SEBE POPIS A MAPKU V "TIPS"*********** MEDIA SMALL **********
+    &.tips{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
+}
+
 
 .flexbox_photo{
     flex: 0 0 calc((100% - 80px) / 2);  
     margin: var(--spacer) var(--spacer-2);
     text-align: center;
 }
+
 //ZAOBLUJE FOTKU A DÁVÁ ŠÍŘKU 100% V "OVERNATTING"
 .flexbox_photo img{
    width:100%;
@@ -153,7 +165,15 @@ text-align: center;
    margin-bottom: var(--spacer);
    
 }
-.mer-info{
+.mer-info{ //ODSAZUJE "MER INFO" V "OVERNATTING
     padding: var(--spacer);
 }
-
+.fotokart{ //ZMENŠUJE MAPKU NA 25% V "TIPS"
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+}
+.foto-tips{ //MĚNÍ FOTKU NA VÍCE ČTVERCOVOU V "TIPS"
+     height: 200px;
+     object-fit: cover;
+}

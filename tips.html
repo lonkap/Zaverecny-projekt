@@ -3,15 +3,23 @@ layout: sablona/hlavni-sablona.njk
 title: Tips
 ---
     
-   <h2>Tips</h2>
+<h2 class="section_title">Tips</h2>
    <!--pěší túry-->
-        <h3>Futturer</h3>
-        <img src="/images/melkampen_Nils-Jørgen Kristiansen .jpg" alt="bildet av Melkampen">
-        <p>Foto: Nils-Jørgen Kristiansen</p>
-        <h4>Melkampen</h4>
-        <p>1,7 km</p>
-        <p>fra Marsjøen</p>
-        <img src="/images/melkampen.jpg" alt="kart-Melkampen">
+   <h3 class="section_subtitle">Futturer</h3>
+        <div class="flexbox camp">
+            <div class="flexbox_photo">
+               <img src="/images/melkampen_Nils-Jørgen Kristiansen .jpg" class="foto-tips" alt="bildet av Melkampen">
+               <span class="foto-font pixa">Foto: Nils-Jørgen Kristiansen</span>
+            </div>
+            <div class="flexbox_text tips"> 
+               <div>
+                  <h4>Melkampen</h4>
+                  <p>1,7 km<br>
+                  fra Marsjøen</p>
+               </div>
+               <img src="/images/melkampen.jpg" class="fotokart" alt="kart-Melkampen">
+            </div>
+        </div>
 
       <h4>Døllihøe</h4>
       <img src="/images/døllihøi_moje.jpg" alt="bildet av Døllihøe">
@@ -29,7 +37,7 @@ title: Tips
         <h3>Attraksjoner</h3>
 
         <img src="/images/kjerringa_ngu.jpg" alt="bildet av Kjerringa">
-        <p>Foto: Norges geologiske undersøkelse (NGU)</p>
+        <span class="foto-font">Foto: Norges geologiske undersøkelse (NGU)</span>
         <p>Kjerringa</p>
 
         <img src="/images/ri6.jpg" alt="ildet av Råtåsjøen">
