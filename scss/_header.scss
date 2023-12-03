@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 150px;
 }
-//VERTIKÁLNÍ MENU SMALL A MEDIUM **************************************
+//VERTIKÁLNÍ MENU **************************************
 .menu{
 text-align: center;
 margin: 0;
@@ -29,5 +29,7 @@ list-style-type: none;
 //STÍN POD HEADER **********************************************
 .header{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-bottom: 0.5px solid var(--color-special);
+    background-color: white;
 }
 

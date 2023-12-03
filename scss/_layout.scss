@@ -4,6 +4,10 @@
     justify-content: space-evenly;
     align-items: center;
     padding: var(--spacer-2);
+    @media (min-width:600px){// DÁVÁ K SOBĚ LOGO A MENU **************MEDIA MEDIUM, LARGE ***********
+        justify-content: center;
+        gap: 50px;
+    }
 }
 .header_logo{
     flex: 0 1 33%; //LOGO ZABÍRÁ 33%
@@ -24,8 +28,13 @@
     @media (max-width:599px){ //  ZVĚTŠUJE ROZESTUPY MEZI KARTAMI NA HOMEPAGE****** MEDIA SMALL ********
         margin: 50px 30px;
         }
-}
-
+        @media (min-width:800px){ //  ZVĚTŠUJE ROZESTUPY MEZI KARTAMI NA HOMEPAGE****** MEDIA MEDIUM ********
+            flex: 0 0 calc((100% - 195px) / 2);  
+            }
+        @media (min-width:1200px){
+            flex: 0 0 calc((100% - 360px) / 3);//DÁVÁ KARTY PO 3 *********** MEDIA LARGE **************
+        }
+    }
 //STYL HORNÍ POLOVINY S FOTKOU
 .card_photo{
     
@@ -36,6 +45,9 @@
     border-radius: 15px 15px 0 0;
     @media (max-width:599px){ //ZVĚTŠUJE FOTKU Z 50 NA 55%************ MEDIA SMALL ************
         height: 55%;
+    }
+    @media (min-width:1200px){//ZVĚTŠUJE FOTKU Z 55 NA 60%************ MEDIA LARGE ************
+        height: 60%;
     }
 }
 //STYL DOLNÍ POLOVINY S TEXTEM
@@ -48,7 +60,9 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 50px; // ODSOUVÁ SPODNÍ KARTY OD FOOTER
+    @media (min-width:600px){ // ODSOUVÁ SPODNÍ KARTY OD FOOTER ******** MEDIA MEDIUM **********
+    padding-bottom: 50px; 
+    }
     @media (max-width:599px){ //DÁVÁ KARTY POD SEBE PO 1************** MEDIA SMALL **************
         display: block;
     }
@@ -95,6 +109,16 @@ text-align: center;
     @media (max-width:599px){ //KARTY JSOU POD SEBOU V "OVERNATTING"***** MEDIA SMALL ***********
         display: block;
     }
+    @media (min-width:800px){ //ZVĚTŠUJE GRID MEZI KARTAMI V "OVERNATTING" ******** MEDIA MEDIUM ****
+        gap:70px;
+        padding: var(--spacer) 70px;
+        }   
+    
+     @media (min-width:1200px){ //KARTY JSOU PO 3 V "OVERNATTING" ***** MEDIA LARGE ***********
+        grid-template-columns: repeat(3, 1fr);
+        gap: 70px;
+        padding: 70px;
+}
 }
 //UMÍSTĚNÍ KAŽDÉ KARTY DO 1 SLOUPCE V "OVERNATTING"
 .container_card{
@@ -112,7 +136,7 @@ text-align: center;
 //STYLUJE FOTOGRAFIE NA KARTÁCH V "OVERNATTING"
 .foto{
         width: 100%;
-        height: 50%;
+        height: 70%;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
         @media (max-width:599px){// ZVĚTŠUJE FOTKU Z 50 NA 70%************** MEDIA SMALL **********
@@ -122,58 +146,117 @@ text-align: center;
 //FLEXBOX DÁVÁ VEDLE SEBE FOTKU A TEXT V "OVERNATTING"
 .flexbox{
     display: flex;
+    justify-content: space-around;
+    
+   
     &.camp{
         align-items: start;
+        @media (min-width:800px){
+        flex: 0 0 calc((100% - 280px) / 3); //DÁVÁ 3 TIPY VEDLE SEBE ******** MEDIA MEDIUM, LARGE ******
+        }
     }
     @media (max-width:599px){ //RUŠÍ FLEXBOX V "OVERNATTING************** MEDIA SMALL****************
         display: block;
+        }
+        &:nth-child(2n):not(.camp){ //DĚLÁ ŠEDÉ POZADÍ U DØLLIHØI V "TIPS", ALE NE U "CAMP" V "OVERNATTING"
+            background-color: var(--grey);
+        }
+}
+ 
+@media (min-width:1200px){ 
+.flexbox-fotturer{ //FLEXBOX DÁVÁ 3 TIPY NA TÚRY VEDLE SEBE v "TIPS" ************* MEDIA LARGE *********
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width:599px){  
+    .flexbox.camp{background-color: white!important;//RUŠÍ ŠEDÉ POZADÍ U DØLLIHØI V "TIPS"******* MEDIA SMALL *****
     }
 }
-
+  
 .flexbox_text{
     flex: 0 1 50%;
-    padding: 0 var(--spacer);
+    padding: var(--spacer); //ODSAZANÍ TEXTU, KT.JE VEDLE FOTKY V "OVERNATTING" A "TIPS"
+    @media (max-width:599px){ //NEODSAZUJE TEXT -"- ************** MEDIA SMALL *********************
+    padding: 0 var(--spacer-2);
+              }
+    
+       
     & p{
         padding: 0;
+        @media(min-width:800px){ //ODSAZUJE TEXT ZPRAVA V "TIPS" *********** MEDIA MEDIUM, LARGE *****
+            padding-right:50px;
+        }
     }
     @media (max-width:599px){ //DĚLÁ MEZERU POD TEXTEM V "OVERNATTING"************ MEDIA SMALL***************
         padding-bottom: var(--spacer);
     }
+
     & h4{ //NADPIS H4 JE TUČNĚ V "TIPS"
         font-weight: 400;
+        margin-top: 15px;// POSOUVÁ H4 NA ROVINU S FOTKOU V "TIPS"
     }
     @media (max-width:599px){ //DÁVÁ VEDLE SEBE POPIS A MAPKU V "TIPS"*********** MEDIA SMALL **********
     &.tips{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+     }
     }
 }
-}
 
-
-.flexbox_photo{
+.flexbox_photo{ //FOTKA A POPIS VEDLE NÍ V "OVERNATTING" A "TIPS"
     flex: 0 0 calc((100% - 80px) / 2);  
     margin: var(--spacer) var(--spacer-2);
     text-align: center;
+    @media (min-width:1200px){ // URČUJE VELIKOST FOTKY V "OVERNATTING" A "TIPS"*********** MEDIA LARGE ***************
+        margin: 20px;
+        flex: 1 0 50%;
+       }
+       @media (max-width:799px){ //  ***************** MEDIA SMALL **********
+        margin:20px 0; 
+        flex: 0 0 calc((100% - 260px) / 2);  
+        
 }
+    
+}
+@media (min-width:800px) {
+.flexbox_photo{ //  ODSAZUJE FOTKY ZLEVA V "TIPS" A "OVERNATTING"***************** MEDIA MEDIUM**********
+    margin-left: 80px;
+    flex: 0 0 calc((100% - 280px) / 2);  
+}
+}
+
 
 //ZAOBLUJE FOTKU A DÁVÁ ŠÍŘKU 100% V "OVERNATTING"
 .flexbox_photo img{
    width:100%;
    border-radius: 15px;
    margin-bottom: var(--spacer);
+   @media (max-width:599px){ //RUŠÍ ZAOBLENÍ A ODSAZENÍ V "OVERNATTING" ******* MEDIA SMALL ******
+   border-radius: 0;
+   }
    
+     &{margin-top: var(--spacer); //ODSAZUJE FOTKY ODSHORA V "OVERNATTING" A "TIPS"
+   }
 }
 .mer-info{ //ODSAZUJE "MER INFO" V "OVERNATTING
-    padding: var(--spacer);
+    padding: var(--spacer) 0;
 }
 .fotokart{ //ZMENŠUJE MAPKU NA 25% V "TIPS"
-    width: 25%;
-    height: 25%;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.2);
+    @media (max-width:599px){ //ODSOUVÁ MAPKU OD TEXTU V "TIPS" ******* MEDIA SMALL ***********
+        margin-left:20%;
+    }
 }
 .foto-tips{ //MĚNÍ FOTKU NA VÍCE ČTVERCOVOU V "TIPS"
      height: 200px;
      object-fit: cover;
 }
+.section_kart{
+    text-align: center;
+}
+

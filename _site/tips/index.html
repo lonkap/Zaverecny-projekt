@@ -13,6 +13,7 @@
 	
 </head>
 <body>
+    <div class="max-width">
     <!--vložený HEADER-->
 <header class="header">
     <!--logo-->
@@ -30,11 +31,18 @@
         <!--konec společného obsahu pro všechny stránky NAD obsahem-->
 
         
+
 <h2 class="section_title">Tips</h2>
+<div class="section_kart">
+   <a href="https://www.google.com/maps/d/viewer?mid=1LMkc-6l8I1BNHIdsgNzoTSFCi1Zz8P4&ll=62.22446235497065%2C9.99179204677735&z=10">kart</a>
+</div>
+
    <!--pěší túry-->
    <h3 class="section_subtitle">Futturer</h3>
-        <div class="flexbox camp">
-            <div class="flexbox_photo">
+
+    <div class="flexbox-fotturer"><!--FLEXBOX PRO LARGE-->
+         <div class="flexbox camp">
+            <div class="flexbox_photo tipy"><!--TIP 1-->
                <img src="/images/melkampen_Nils-Jørgen Kristiansen .jpg" class="foto-tips" alt="bildet av Melkampen">
                <span class="foto-font pixa">Foto: Nils-Jørgen Kristiansen</span>
             </div>
@@ -44,40 +52,74 @@
                   <p>1,7 km<br>
                   fra Marsjøen</p>
                </div>
-               <img src="/images/melkampen.jpg" class="fotokart" alt="kart-Melkampen">
+               <a href="/images/melkampen.jpg"><img src="/images/melkampen.jpg" class="fotokart" alt="kart-Melkampen"></a>
             </div>
+      </div>
+
+      <div class="flexbox camp">
+            <div class="flexbox_photo tipy"><!--TIP 2-->
+               <img src="/images/døllihøi_moje.jpg" class="foto-tips dollihoe" alt="bildet av Døllihøe">
+            </div>
+            <div class="flexbox_text tips"> 
+               <div>
+                  <h4>Døllihøe</h4>
+                  <p>1,5 km<br>
+                     fra Døllisætre</p>
+               </div>
+               <a href="/images/døllihøe.jpg"><img src="/images/døllihøe.jpg" class="fotokart" alt="kart-Døllihøe"></a>
+            </div>
+      </div>
+
+      <div class="flexbox camp">
+         <div class="flexbox_photo tipy"><!--TIP 3-->
+              <img src="/images/storperhøa.jpg" class="foto-tips" alt="bildet av Storperhøa">
+         </div>
+         <div class="flexbox_text tips"> 
+             <div>
+               <h4>Storperhøa</h4>
+               <p>0,9 km<br>
+                 fra Hussætra</p>
+             </div>
+             <a href="/images/storperhøa_kart.jpg"><img src="/images/storperhøa_kart.jpg" class="fotokart" alt="kart-Storperhøa"></a>
+         </div>
+      </div>
+   </div><!--KONEC FLEXBOXU PRO LARGE-->
+
+    <!--atrakce-->
+     <section class="attraksjoner"><!--ZAČÁTEK ŠEDÉHO PRUHU-->
+         <h3 class="section_subtitle">Attraksjoner</h3>
+         <div class="container_cards">
+            <div class="container_card"><!--Kjerringa-->
+               <img src="/images/kjerringa_ngu.jpg" class="foto" alt="bildet av Kjerringa">
+               <span class="foto-font">Foto: Norges geologiske undersøkelse (NGU)</span>
+               <p>Kjerringa</p>
+            </div>
+    
+            <div class="container_card"><!--Råtåsjøen-->
+                <img src="/images/ri6.jpg" class="foto" alt="ildet av Råtåsjøen">
+                  <p>Råtåsjøen</p>
+            </div>
+    
+            <div class="container_card"><!--Klemetsbrua-->
+                  <img src="/images/ri2.jpg" class="foto" alt="bildet av Klemetsbrua">
+                   <p>Klemetsbrua</p>
+            </div>
+         </div>
+     </section>
+                 <!--Romsdalssetra-->
+      <div class="flexbox mat">
+         <div class="flexbox_photo">
+            <a href="https://www.opplevalvdal.no/mat/romsdalssetra">
+            <img src="/images/ku_pixa.jpg" alt="bildet av ei ku"></a>
+            <span class="foto-font pixa">Foto: Pixabay</span>
         </div>
-
-      <h4>Døllihøe</h4>
-      <img src="/images/døllihøi_moje.jpg" alt="bildet av Døllihøe">
-      <p>1,5 km</p>
-      <p>fra Døllisætre</p>
-      <img src="/images/døllihøe.jpg" alt="kart-Døllihøe">
-
-        <h4>Storperhøa</h4>
-        <img src="/images/storperhøa.jpg" alt="bildet av Storperhøa">
-        <p>0,9 km</p>
-        <p>fra Hussætra</p>
-        <img src="/images/storperhøa_kart.jpg" alt="kart-Storperhøa">
-
-     <!--atrakce-->
-        <h3>Attraksjoner</h3>
-
-        <img src="/images/kjerringa_ngu.jpg" alt="bildet av Kjerringa">
-        <span class="foto-font">Foto: Norges geologiske undersøkelse (NGU)</span>
-        <p>Kjerringa</p>
-
-        <img src="/images/ri6.jpg" alt="ildet av Råtåsjøen">
-        <p>Råtåsjøen</p>
-
-        <img src="/images/ri2.jpg" alt="bildet av Klemetsbrua">
-        <p>Klemetsbrua</p>
-
-        <h3>Romsdalssetra</h3>
-        <img src="/images/ku_pixa.jpg" alt="bildet av ei ku">
-        <p>Romsdalssetra har en sjarmerende beliggenhet ved elvebredden, og tilbyr vakre alternativer for sykkelturer, fiske, bading, camping og fotturer i fjellet.</p>
-        <p>Flere av setrene i området er fortsatt i aktiv drift, inkludert den velkjente Kjøllhaugsetra. Om sommeren kan du besøke budeia, Gun Kjølhaug, som serverer autentisk setermat med røtter i tradisjonen.</p>
-
+        <div class="flexbox_text">
+            <h3>Romsdalssetra</h3>
+            <p><a href="https://www.opplevalvdal.no/mat/romsdalssetra">Romsdalssetra</a> har en sjarmerende beliggenhet ved elvebredden, og tilbyr vakre alternativer for sykkelturer, fiske, bading, camping og fotturer i fjellet.</p>
+            <p>Flere av setrene i området er fortsatt i aktiv drift, inkludert den velkjente Kjøllhaugsetra. Om sommeren kan du besøke budeia, Gun Kjølhaug, som serverer autentisk setermat med røtter i tradisjonen.</p>
+        </div>
+      </div>
+   
    
 
 
@@ -90,5 +132,6 @@
     <a href="/bildergalleri/" class="footer_text">bildergalleri</a>
  </footer>
 
+   </div>
 </body>
 </html>

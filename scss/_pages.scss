@@ -15,6 +15,9 @@
     position: absolute ;
     top: var(--spacer);
     left: var(--spacer);
+    @media (min-width:800px){ //ODSAZUJE TEXT NA ÚVODNÍ FOT. ZLEVA NA HOMEPAGE **** MEDIA MEDIUM, LARGE **********
+      left: 90px;
+    }
 }
 .photo_subtitle{
     position: absolute ;
@@ -23,6 +26,9 @@
     color:white;
     //STÍN KOLEM BÍLÉHO TEXTU NA ÚVODNÍ FOTOGRAFII NA HOMEPAGE
     text-shadow: 0 0 2px black;
+    @media (min-width:800px){ //ODSAZUJE PODTEXT NA ÚVODNÍ FOT. ZLEVA NA HOMEPAGE **** MEDIUM,LARGE **********
+      left: 90px;
+    }
 }
 //  VLOŽENÍ JMÉNA AUTORA DO FOTOGRAFIE NA HOMEPAGE*********************
 .photo_autor{
@@ -31,12 +37,16 @@
     left: var(--spacer);
     color:var(--grey);
     font-size: 10px;
+    @media (min-width:800px){ //ODSAZUJE TEXT NA ÚVODNÍ FOT. ZLEVA NA HOMEPAGE **** MEDIUM, LARGE **********
+      left: 90px;
+    }
 }
 
 //TEXT NA HOMEPAGE *****************************************
 p{
     padding:  0 var(--spacer);
 }
+
 //PODPOPISEK U FOTKY NA HOMEPAGE **************************
 .photo_subtitle{
     font-size: var(--size-h2);
@@ -66,6 +76,12 @@ p{
  .home_map{
     width:100%;
  }
+ 
+  .home-text{ //DĚLÁ OKRAJE KOLEM TEXTU NA HOMEPAGE **********MEDIA MEDIUM, LARGE ***********
+    @media(min-width:800px){ 
+  margin: var(--spacer-2) 63px 63px 63px;
+}
+  }
 //*******************************************************************************************************
 //*******************************************************************************************************
  //NASTAVENÍ 100% ŠÍŘE VŠEM OBRÁZKŮM V "BILDERGALLERI" ******

@@ -2,8 +2,14 @@ html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 body{
   margin: 0;
+  background-color: white;
+ 
 }
-
+.max-width{
+  max-width: 1500px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 1000px rgb(207, 207, 207);
+}
 //DEFINOVÁNÍ VELIKOSTI A DRUHU PÍSMA **************************
 :root {
   --font-special:'Comfortaa', sans-serif;
@@ -40,8 +46,7 @@ $small:600px;
     h3{
         font-family: var(--font-special);
         font-weight: var(--weight-bold);
-        
-    }
+      }
     h1{
       font-size: var(--size-h1);
     }
@@ -75,11 +80,21 @@ $small:600px;
   text-align: left;
   margin-left: var(--spacer-2);
   margin:0;
-  padding: 40px var(--spacer-2) var(--spacer-2) var(--spacer-2);
+  padding: 40px var(--spacer-2) 0 var(--spacer-2);
+  @media (min-width:800px){ //ODSOUVÁ H3 O 90PX ZLEVA *************MEDIA MEDIUM,LARGE *************
+    margin-left: 60px;
+  }
 }
 ::marker{// ZBARVUJE ODRÁŽKY U SEZNAMU V "OVERNATTING"
   color: var(--color-special);
 }
 ul{//DĚLÁ Z ODRÁŽEK ČTVERCE V "OVERNATTING"
   list-style-type: square;
+  padding: 0;
+  @media (max-width:599px){ //ODSAZUJE SEZNAM ZLEVA V "OVERNATTING" ********* MEDIA SMALL ***********
+    padding: var(--spacer);
+}
+}
+.attraksjoner{//ŠEDÝ PRUH V "TIPS"
+  background-color: var(--grey);
 }
