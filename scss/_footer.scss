@@ -1,14 +1,20 @@
 .footer{
-    height:100px;
     background-color: var(--color-footer);
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    min-height: 100px;
+    
+}
+.footer_col{
+    flex:0 1 50%;
 }
 .footer_text{
     padding: var(--spacer);
     margin: 0;
-    font-size: 15px;
+    font-size: 10px;
     color:darkgrey;
+    text-align: left;
+   
 }

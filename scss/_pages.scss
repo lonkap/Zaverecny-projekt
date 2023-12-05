@@ -59,6 +59,7 @@ p{
     border: 5px solid var(--color-special);
     border-radius: 15px;
     background-color: white;
+   
     &_text{
       font-size: var(--size-h2);
       font-family: var(--font-special);
@@ -66,10 +67,15 @@ p{
     & a{
       text-decoration: none;
     }
+    & a:hover{
+      color: DeepSkyBlue;
+      
+    }
   }
   //UMÍSTĚNÍ TLAČÍTKA FOTOGALERIE DOPROSTŘED NA HOMEPAGE****
     .photo-button{
       text-align: center;
+      
     }
 
  //MAPA NA HOMEPAGE *****************************************
@@ -109,6 +115,18 @@ p{
     position: relative;
     bottom:25px;
     left: 40px;
+    @media (min-width:800px)
+    {
+      font-size: large;
+      bottom:40px;
+      left: 80px;
+    }
+    @media (min-width:1200px)
+    {
+      font-size: x-large;
+      bottom:60px;
+      left: 120px;
+    }
   }
  
  
