@@ -205,6 +205,21 @@ text-align: center;
     }
 }
 
+.flexbox_photo.tipy{ //FOTKA A POPIS VEDLE NÍ V "OVERNATTING" A "TIPS"
+    flex: 0 0 calc((100% - 80px) / 2);  
+    margin: var(--spacer) var(--spacer-2);
+    text-align: center;
+    @media (min-width:1200px){ // URČUJE VELIKOST FOTKY V "OVERNATTING" A "TIPS"*********** MEDIA LARGE ***************
+        margin: 20px;
+        flex: 1 0 50%;
+       }
+       @media (max-width:799px){ //  ***************** MEDIA SMALL **********
+        margin:20px 0; 
+        flex: 0 0 calc((100% - 260px) / 2);  
+        
+}
+    
+}
 .flexbox_photo{ //FOTKA A POPIS VEDLE NÍ V "OVERNATTING" A "TIPS"
     flex: 0 0 calc((100% - 80px) / 2);  
     margin: var(--spacer) var(--spacer-2);
@@ -256,7 +271,45 @@ text-align: center;
      height: 200px;
      object-fit: cover;
 }
-.section_kart{
+.section_kart{ //ODKAZ NA MAPU DÁVÁ DOPROSTŘED V "TIPS"
     text-align: center;
 }
 
+.grid-info{//GRID PRO "INFO"
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-auto-rows: auto;
+    gap: 50px var(--spacer-2);
+    align-items:center;
+    padding: var(--spacer-2); 
+    @media (min-width:800px){ //ZVĚTŠUJE PADDING V "INFO" *********** MEDIA MEDIUM ********
+        padding: var(--spacer-2) 90px;
+        grid-template-columns: 30% 1fr;
+    }
+    
+    &>div:nth-child(2n+1){ //POSOUVÁ IKONY NA STŘED BUŇKY V "INFO"
+        justify-self: center;
+    }
+}
+@media (min-width:900px){ 
+    .grid-info>div:nth-child(2n+1){ //POSOUVÁ IKONY DOPRAVA V BUŇCE V "INFO"
+        justify-self: end;
+    }
+    .grid-info{ //ZVĚTŠUJE ROZESUP MEZI IKONOU A TEXTEM V "TIPS" ************ MEDIA LARGE ***************
+        column-gap: 100px;
+    }
+}
+
+@media(min-width:1200px){ //DÁVÁ VEDLE SEBE TEXT A MAPU NA HOMEPAGE ******** MEDIA LARGE ************
+  .container-homepage{
+    display: flex;
+    }
+    .home-text{
+        flex: 0 0 60%;
+        border-left: 5px solid var(--color-special);
+    }
+    .home-map{
+        align-self: center;
+        margin: 0 90px 33px 0;
+    }
+  }
