@@ -1,0 +1,27 @@
+---
+layout: sablona/hlavni-sablona.njk
+title: form
+---
+<form method="post" action="http://formular.itgirls.cz">
+	<h1>Kontakt form</h1>
+	
+	<div class="pole">
+		<label for="jmeno">Navn *</label>
+		<input type="text" name="jmeno" id="jmeno" required>
+	</div>
+
+	<div class="pole">
+		<label for="email">E-post *</label>
+		<input type="email" name="email" id="email" required>
+	</div>
+
+	<div class="pole">
+		<label for="zprava">Ditt spørsmål</label>
+		<textarea name="zprava" id="zprava" rows="10"></textarea>
+	</div>
+
+	<div class="pole">
+		<button type="submit">Send</button>
+	</div>
+
+	</form>

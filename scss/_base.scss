@@ -2,7 +2,7 @@ html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 body{
   margin: 0;
-  background-color: white;
+  background-color: #F8F8F8; 
  
 }
 .max-width{
@@ -32,6 +32,7 @@ body{
   }
    
     //VELIKOST PÍSMA H1-H4 A p  **************************************
+    body,
     p,
     h4,
     li{
@@ -58,7 +59,11 @@ body{
       font-size: var(--size-h3-4-p);
     }
     //ODKAZY - BARVY, DEKORACE 
-    
+    .white{
+      background-color: white;
+      position:relative;
+      z-index: -1;
+      }
        
 //ŠEDÉ POZADÍ U SEKCE AKTIVITETER NA HOMEPAGE 
 .aktiviteter{

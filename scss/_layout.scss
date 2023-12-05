@@ -158,7 +158,7 @@ text-align: center;
     @media (max-width:599px){ //RUŠÍ FLEXBOX V "OVERNATTING************** MEDIA SMALL****************
         display: block;
         }
-        &:nth-child(2n):not(.camp){ //DĚLÁ ŠEDÉ POZADÍ U DØLLIHØI V "TIPS", ALE NE U "CAMP" V "OVERNATTING"
+        &:nth-child(2n):not(.camp, .mat){ //DĚLÁ ŠEDÉ POZADÍ U DØLLIHØI V "TIPS", ALE NE U "CAMP" V "OVERNATTING"
             background-color: var(--grey);
         }
 }
