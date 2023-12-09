@@ -10,21 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--font Comfortaa + Lato -->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-	
+	<!--IKONY-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <div class="max-width">
     <!--vložený HEADER-->
 <header class="header">
     <!--logo-->
-       <a href="/"><img src="/images/logo.svg" class="header_logo" alt="logo"></a>
+       <a href="/"><img src="/images/logo.svg" class="header__logo" alt="logo"></a>
     <!--navigace-->
        <div class="header_menu">
     <ul class="menu">
-        <li><a href="/overnatting&mat/" class="menu_item">overnatting&mat</a></li>
-        <li><a href="/bildergalleri/" class="menu_item">bildergalleri</a></li>
-        <li><a href="/info/" class="menu_item">info</a></li>
-        <li><a href="/tips/" class="menu_item">tips</a></li>
+        <li><a href="/overnatting&mat/" class="menu__item ">overnatting&mat</a></li>
+        <li><a href="/bildergalleri/" class="menu__item ">bildergalleri</a></li>
+        <li><a href="/info/" class="menu__item ">info</a></li>
+        <li><a href="/tips/" class="menu__item ">tips</a></li>
     </ul>
 </div>
    </header>
@@ -39,7 +46,7 @@
 	</div>
 
 	<div class="pole">
-		<label for="zprava">Ditt spørsmål</label>
+		<label for="zprava">Din beskjed</label>
 		<textarea name="zprava" id="zprava" rows="10"></textarea>
 	</div>
     <h4>Personvernerklæring: </h4><p>Jeg lagrer ikke e-poster med personopplysninger lenger enn nødvendig for det angitte formålet, det vil si at jeg bruker din e-post kun for å besvare henvendelser. Jeg selger ikke dine personopplysninger til tredjepart</p>
@@ -53,16 +60,17 @@
        <!--začátek společného obsahu pro všechny stránky POD obsahem-->
        <!--vložený FOOTER-->   
     <footer class="footer">
-    <div class="footer_col">
-        <span class="footer_text">©2023</span>
-        <a href="/form/" class="footer_text">kontakt</a>
+    <div class="footer__col">
+        <span class="footer__text">©2023</span>
+        <a href="/form/" class="footer__text">kontakt</a>
     </div>
 
     <div>
-    <p class="footer_text">Takk til alle som har gitt tillatelse til å bruke bilder på denne nettsiden. Deres velvillighet og støtte er høyt verdsatt. Takk til Jarle Storsveen, Inger Pedersen Nesteby, Nils-Jørgen Kristiansen, Anders Gabrielsen, Folldal fjellstyre, Folldal småbedrifter bedriftsidrettslag, Norges geologiske undersøkelse (NGU).</p>
+    <p class="footer__text">Takk til alle som har gitt tillatelse til å bruke bilder på denne nettsiden. Deres velvillighet og støtte er høyt verdsatt. Takk til Jarle Storsveen, Inger Pedersen Nesteby, Nils-Jørgen Kristiansen, Anders Gabrielsen, Folldal fjellstyre, Folldal småbedrifter bedriftsidrettslag, Norges geologiske undersøkelse (NGU).</p>
     </div>
  </footer>
 
    </div>
+   <script src="fslightbox.js"></script>
 </body>
 </html>

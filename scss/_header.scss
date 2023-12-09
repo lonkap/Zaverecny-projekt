@@ -1,5 +1,5 @@
 //LOGO SMALL***************************************************
-.header_logo{
+.header__logo{
     width: 100%;
     max-width: 150px;
 }
@@ -11,7 +11,7 @@ padding: 0;
 list-style-type: none;
 }
 
-.menu_item{
+.menu__item{
     text-decoration: none;
     display: block;
     padding: 10px 10px;
@@ -24,7 +24,9 @@ list-style-type: none;
         border: 5px solid var(--color-special);
         border-radius: 15px;
     }
-    
+    &--active{
+        color:rgb(23, 114, 205);
+    }
 }
 //STÍN POD HEADER **********************************************
 .header{

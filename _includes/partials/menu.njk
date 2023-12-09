@@ -1,8 +1,8 @@
 <div class="header_menu">
     <ul class="menu">
-        <li><a href="/overnatting&mat/" class="menu_item">overnatting&mat</a></li>
-        <li><a href="/bildergalleri/" class="menu_item">bildergalleri</a></li>
-        <li><a href="/info/" class="menu_item">info</a></li>
-        <li><a href="/tips/" class="menu_item">tips</a></li>
+        <li><a href="/overnatting&mat/" class="menu__item {{ 'menu__item--active' if page.fileSlug==='overnatting&mat'}}">overnatting&mat</a></li>
+        <li><a href="/bildergalleri/" class="menu__item {{ 'menu__item--active' if page.fileSlug==='bildergalleri'}}">bildergalleri</a></li>
+        <li><a href="/info/" class="menu__item {{ 'menu__item--active' if page.fileSlug==='info'}}">info</a></li>
+        <li><a href="/tips/" class="menu__item {{ 'menu__item--active' if page.fileSlug==='tips'}}">tips</a></li>
     </ul>
 </div>

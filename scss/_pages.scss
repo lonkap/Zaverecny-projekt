@@ -92,41 +92,19 @@ p{
 
 //*******************************************************************************************************
 //*******************************************************************************************************
- //NASTAVENÍ 100% ŠÍŘE VŠEM OBRÁZKŮM V "BILDERGALLERI" ******
- .bildergalleri~img{
-  width: 100%;
-  
- }
- //VYTVOŘENÍ BÍLÉHO PROUŽKU MEZI FOTOGRAFIEMI, KT.MAJÍ VLOŽENÝ POPISEK S AUTOREM, V "BILDERGALLERI"
- .bildergalleri~img:nth-of-type(n+10){
-  margin-top:-15px;
- }
- //VYTVOŘENÍ BÍLÉHO PROUŽKU U POSLEDNÍCH 6 FOTOGRAFIÍ V "BILDERGALLERI"
- .bildergalleri~img:nth-of-type(n+24){
-  margin-top:1px;
- }
+ 
+ 
  //UMÍSTĚNÍ POPISU, KDO JE AUTOREM FOTOGRAFIE, NA FOTOGRAFIE V "BILDERGALLERI"
   .bildergalleri_autor{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     color: white;
     margin: 0;
     padding: 0;
     position: relative;
     bottom:25px;
-    left: 40px;
-    @media (min-width:800px)
-    {
-      font-size: large;
-      bottom:40px;
-      left: 80px;
-    }
-    @media (min-width:1200px)
-    {
-      font-size: x-large;
-      bottom:60px;
-      left: 120px;
-    }
+    left: 18px;
+   
   }
  
  
