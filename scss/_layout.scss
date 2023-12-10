@@ -54,6 +54,9 @@
 .card_text{
 padding: 0 var(--spacer);
 text-align: center;
+& a{
+    font-weight:var(--weight-light);
+}
 }
 //KONTEJNER PRO DISPLAY FLEX PRO ŘAZANÍ KARET ZA SEBOU NA HOMEPAGE
 .kontejner{

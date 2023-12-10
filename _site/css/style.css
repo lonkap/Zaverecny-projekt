@@ -237,6 +237,9 @@ ul {
   padding: 0 var(--spacer);
   text-align: center;
 }
+.card_text a {
+  font-weight: var(--weight-light);
+}
 
 .kontejner {
   display: flex;
